@@ -3,13 +3,13 @@ const app = express()
 const port = process.env.PORT || 5000;
 
 var options = {
-  index: '/static/aquino.html'
+  index: '/static/main.html'
 };
 
 app.use('/static', express.static('static'));
 app.use('/js', express.static('js'));
 app.get('/', function(req, res) {
-    res.redirect('/static/aquino.html');
+    res.redirect('/static/main.html');
 });
 
 app.listen(port, (err) => {
