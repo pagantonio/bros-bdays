@@ -19,7 +19,7 @@ $(document).ready(function(){
   const isBroBdayToday = brosBdayDatesToData.hasOwnProperty(curentDayAndMonth);
 
   if (!isBroBdayToday) {
-    $('#pageBody').load('/static/no-bdays-today.html');
+    $('#pageBody').load('../static/no-bdays-today.html');
     return;
   }
 
