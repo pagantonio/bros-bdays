@@ -26,9 +26,6 @@ $(document).ready(function(){
   const broHTML = brosBdayDatesToData[curentDayAndMonth].file;
   const broMsgFn = brosBdayDatesToData[curentDayAndMonth].msgFn;
 
-  console.log(broHTML);
-  console.log(broMsgFn);
-
   $('#pageBody').load(broHTML, function() {
     makeMagic(broMsgFn);
   });
